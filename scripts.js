@@ -6,8 +6,10 @@ let firstCard, secondCard;
 
 // User will flip card
 function flipCard() {
-    this.classList.toggle('flip');
-   
+    console.log(this.childNodes)
+    this.childNodes[3].classList.toggle('flip');
+    this.childNodes[1].classList.toggle("hidden");
+
     if(!hasFlippedCard) {
         // First Click
     hasFlipped = true;
