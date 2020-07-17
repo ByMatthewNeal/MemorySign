@@ -1,15 +1,20 @@
 * {
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     box-sizing: border-box;
 }
 
 body {
     height: 100vh;
     display: flex;
-    background: #f8f8f7;
+    background: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 16px;
 }
 
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+}
 .memory-game {
     margin: auto;
     display: flex;
@@ -31,8 +36,8 @@ body {
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
-    /* background-color: chartreuse; */
-    border: solid 4px black;
+    /* background-color: orange; */
+    /* border: solid 4px black; */
     
 }
 
@@ -61,4 +66,38 @@ body {
 
 .front-face {
     /* transform: rotate(180deg); */
+}
+
+
+/* styles for the score panel */
+
+.score-panel {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+	list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+	float: right;
+	cursor: pointer;
+}
+
+.fa-star {
+    color: #FFD700
+}
+
+.timer {
+    display: inline-block;
+    margin: 0 1rem;
 }

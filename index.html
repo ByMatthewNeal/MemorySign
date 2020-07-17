@@ -6,7 +6,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="memory-game">
+      <header>
+         <h1>Memory Sign</h1>
+      </header>
+    <section class ="score-panel">
+       <ul class="stars">
+            <li class="fa fa-star"></li>
+            <li class="fa fa-star"></li>
+            <li class="fa fa-star"></li>
+       </ul>
+
+       <span class="moves"></span>
+
+       <div class="timer"></div>
+
+       <div class="restart" onlick=startGame()></div>
+       <div class= "fa fa-repeat"></div>
+   </section>
+   
+   
+<section class="memory-game">
         <div class = "row"> 
 
              <div class= "memory-card">
@@ -118,12 +137,28 @@
                 <img class="front-face hidden" src="img/J.png" alt="letter-J" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
-
         </div>
     </div>
+</section>
 
+   <div id="popup1" class="overlay">
+      <div class="popup">
+         <h2>Congratulations</h2>
+         <a class="close" href=#></a>
+         <div class="content-1">
+            Congratulations you've won!
+         </div>
+         <div class="content-2">
+            <p> You made <span id=finalMove> </span> moves </p>
+            <p> in <span id=totalTime> </span> </p>
+            <p> Rating: <span id= starRating></span> </p>
+         </div>
+         <button id="play=again" onclick= "playAgain()">
+            Play again </a>
+         </button>
 
-    </section>
+      </div>
+   </div>
     
     <script src="scripts.js"></script>
 </body>
