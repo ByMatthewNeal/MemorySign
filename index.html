@@ -6,49 +6,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-      <header>
-         <h1>Memory Sign</h1>
-      </header>
-    <section class ="score-panel">
-       <ul class="stars">
-            <li class="fa fa-star"></li>
-            <li class="fa fa-star"></li>
-            <li class="fa fa-star"></li>
-       </ul>
-
-       <span class="moves"></span>
-
-       <div class="timer"></div>
-
-       <div class="restart" onlick=startGame()></div>
-       <div class= "fa fa-repeat"></div>
-   </section>
-   
-   
+     
 <section class="memory-game">
         <div class = "row"> 
 
-             <div class= "memory-card">
+             <div class= "memory-card" data-framework=A>
              <img class="front-face hidden" src="img/A.png" alt="letter-A" />
              <img class="back-face"  src="img/backcard.png" alt="backcard" />
             </div> 
 
-             <div class= "memory-card"> 
+             <div class= "memory-card" data-framework=A>
              <img class="front-face hidden" src="img/A.png" alt="letter-A" />
              <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div> 
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=B>
                 <img class="front-face hidden" src="img/B.png" alt="letter-B" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div> 
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=B>
                 <img class="front-face hidden" src="img/B.png" alt="letter-B" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div> 
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=C>
                 <img class="front-face hidden" src="img/C.png" alt="letter-C" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
@@ -57,27 +39,27 @@
 
              <div class = "row">
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=C>
                 <img class="front-face hidden" src="img/C.png" alt="letter-C" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=D>
                 <img class="front-face hidden" src="img/D.png" alt="letter-D" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=D>
                 <img class="front-face hidden" src="img/D.png" alt="letter-D" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=E>
                 <img class="front-face hidden" src="img/E.png" alt="letter-E" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=E>
                 <img class="front-face hidden" src="img/E.png" alt="letter-E" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
@@ -85,27 +67,27 @@
 
              <div class = "row">
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=F>
                 <img class="front-face hidden" src="img/F.png" alt="letter-F" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div> 
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=F>
                 <img class="front-face hidden" src="img/F.png" alt="letter-F" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=G>
                 <img class="front-face hidden" src="img/G.png" alt="letter-G" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=G>
                 <img class="front-face hidden" src="img/G.png" alt="letter-G" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=H>
                 <img class="front-face hidden" src="img/H.png" alt="letter-H" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
@@ -113,27 +95,27 @@
 
              <div class = "row">
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=H>
                 <img class="front-face hidden" src="img/H.png" alt="letter-H" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=I>
                 <img class="front-face hidden" src="img/I.png" alt="letter-I" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=I>
                 <img class="front-face hidden" src="img/I.png" alt="letter-I" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=J>
                 <img class="front-face hidden" src="img/J.png" alt="letter-J" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
 
-             <div class= "memory-card" >
+             <div class= "memory-card" data-framework=J>
                 <img class="front-face hidden" src="img/J.png" alt="letter-J" />
                 <img class="back-face"  src="img/backcard.png" alt="backcard" />
              </div>
@@ -141,25 +123,6 @@
     </div>
 </section>
 
-   <div id="popup1" class="overlay">
-      <div class="popup">
-         <h2>Congratulations</h2>
-         <a class="close" href=#></a>
-         <div class="content-1">
-            Congratulations you've won!
-         </div>
-         <div class="content-2">
-            <p> You made <span id=finalMove> </span> moves </p>
-            <p> in <span id=totalTime> </span> </p>
-            <p> Rating: <span id= starRating></span> </p>
-         </div>
-         <button id="play=again" onclick= "playAgain()">
-            Play again </a>
-         </button>
-
-      </div>
-   </div>
-    
     <script src="scripts.js"></script>
 </body>
 </html>
