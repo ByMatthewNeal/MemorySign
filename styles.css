@@ -7,11 +7,8 @@
 body {
     height: 100vh;
     display: flex;
-    background: white;
-    
+    background: rgba(255, 0, 0, 0.384);   
 }
-
-
 
 .memory-game {
     margin: auto;
@@ -35,8 +32,7 @@ body {
     transform-style: preserve-3d;
     transition: transform .5s;
     /* background-color: orange; */
-    /* border: solid 4px black; */
-    
+    border: solid 4px black;   
 }
 
 .hidden {
@@ -45,7 +41,7 @@ body {
 
 .memory-card:active {
     transform: scale(.97);
-    transition: transform .2s;
+    transition: transform .4s;
 }
 
 .memory-card.flip {
@@ -62,8 +58,9 @@ body {
     backface-visibility: hidden;  
 }
 
-.front-face {
-    /* transform: rotate(180deg); */
+.front-face
+.back-face {
+    transform: rotateY(180deg);
 }
 
 
