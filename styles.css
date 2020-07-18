@@ -13,9 +13,10 @@ body {
 .memory-game {
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap; 
-    perspective: 1000px; 
+    justify-content: center;
+    /* perspective: 1000px;  */
 }
 
 .row {

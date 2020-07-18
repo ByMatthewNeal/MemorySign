@@ -1,4 +1,5 @@
 const cards = document.querySelectorAll('.memory-card');
+const gameBoard = document.querySelector(".memory-game")
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -8,7 +9,7 @@ let firstCard, secondCard;
 
 function flipCard() {
     console.log(this.childNodes)
-    this.childNodes[3].classList.toggle('flip');
+    this.childNodes[3].classList.toggle('hidden');
     this.childNodes[1].classList.toggle("hidden");
     console.log("flip the card")
 
@@ -48,9 +49,9 @@ function disableCards() {
 function unflipCards() { 
     console.log("not a match")
     setTimeout(() => {
-        firstCard.childNodes[3].classList.toggle('flip');
+        firstCard.childNodes[3].classList.toggle('hidden');
         firstCard.childNodes[1].classList.toggle("hidden");
-        secondCard.childNodes[3].classList.toggle('flip');
+        secondCard.childNodes[3].classList.toggle('hidden');
         secondCard.childNodes[1].classList.toggle("hidden");
     }, 2000)
     lockBoard = true;
@@ -72,10 +73,28 @@ function resetBoard() {
 
 // cards will be shuffled each time page is reloaded
 function shuffle() {
-    cards.forEach(card => {
+    for  (i = 0; i < cards.length; i++) {
       let randomPos = Math.floor(Math.random() * 20);
-  })}
+        let randomCard = cards[randomPos]
+        cards[randomPos] = cards[i]
+        cards[i] = randomCard
+        console.log(cards[i])
+    }
+};
 
+  function newDeal() {
+      gameBoard.innerHTML = ""
+      cards.forEach(card => {
+          gameBoard.appendChild(card)
+      })
+  }
+  
+    window.addEventListener('DOMContentLoaded', (event) => {
+    shuffle()
+    newDeal()
+    console.log(cards)
+});
 
+ 
 
 cards.forEach(card => card.addEventListener('click', flipCard))
