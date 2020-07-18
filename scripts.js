@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll('.memory-card');
+let cards = Array.from(document.querySelectorAll('.memory-card')); 
 const gameBoard = document.querySelector(".memory-game")
 
 let hasFlippedCard = false;
@@ -78,22 +78,24 @@ function shuffle() {
         let randomCard = cards[randomPos]
         cards[randomPos] = cards[i]
         cards[i] = randomCard
-        console.log(cards[i])
+        console.log(randomCard, cards[i], cards)
     }
+        console.log(cards)
 };
 
-  function newDeal() {
-      gameBoard.innerHTML = ""
+function newDeal() {
+    gameBoard.innerHTML = ""
+    shuffle()
       cards.forEach(card => {
           gameBoard.appendChild(card)
       })
   }
   
     window.addEventListener('DOMContentLoaded', (event) => {
-    shuffle()
-    newDeal()
-    console.log(cards)
-});
+        console.log(cards)
+        newDeal()
+    });
+    
 
  
 
