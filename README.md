@@ -17,4 +17,13 @@ Objective: Find the correct ASL letter to its match, there are ten letters.
  - When the time is up user will be able to see how many turns they took under 60 seconds.
 
 
+Technology used:
+HTML
+CSS
+JAVASCRIPT
+
+I made this project because I remember when I was was in school, I always wished there was a game I could play to help make leanring ASL more fun. 
+
+I want to approach this game again and add the turn times, and timer. 
+
 
