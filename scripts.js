@@ -53,7 +53,7 @@ function unflipCards() {
         firstCard.childNodes[1].classList.toggle("hidden");
         secondCard.childNodes[3].classList.toggle('hidden');
         secondCard.childNodes[1].classList.toggle("hidden");
-    }, 2000)
+    }, 1000)
     lockBoard = true;
   
 

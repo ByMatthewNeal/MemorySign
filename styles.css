@@ -7,8 +7,9 @@
 body {
     height: 100vh;
     display: flex;
-    background: rgba(255, 0, 0, 0.384);   
+    background-image: linear-gradient(rgb(142, 6, 6),rgb(78, 78, 240));   
 }
+
 
 .memory-game {
     margin: auto;
@@ -19,6 +20,8 @@ body {
     justify-content: center;
     /* perspective: 1000px;  */
 }
+
+
 
 .row {
     display: flex;
@@ -34,7 +37,11 @@ body {
     transform-style: preserve-3d;
     transition: transform .5s;
     /* background-color: orange; */
-    border: solid 4px black;   
+    border: solid 4px rgb(140, 140, 8);   
+}
+
+.memory-card :hover {
+    background-color: rgba(0, 162, 255, 0.575);
 }
 
 .hidden {
